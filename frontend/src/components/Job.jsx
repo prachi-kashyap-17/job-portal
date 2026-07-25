@@ -12,7 +12,6 @@ function Job() {
     const joblist = async () => {
       try {
         const joblist = await getAllJobs();
-        console.log(joblist);
         setjobs(joblist);
       } catch (err) {
         seterr(
