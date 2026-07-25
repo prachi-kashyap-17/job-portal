@@ -62,6 +62,10 @@ app.use(//enable session for every request
     resave: false,//if there is no change in session ,dont save again in db
     saveUninitialized: false, // Save session only after some data is added
     store: store, // Store sessions in MongoDB instead of server memory (RAM)
+    cookie:{
+      secure:true,
+      sameSite:"none"
+    }
   })
 );
 
