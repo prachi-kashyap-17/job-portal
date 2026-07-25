@@ -1,0 +1,24 @@
+.header {
+  display: flex; /* Arrange child elements in a row */
+  justify-content: space-between; /* Add space between items along the main axis */
+  align-items: center; /* Align items at the center on the cross axis */
+  height: 70px; /* Set the height of the element */
+  padding: 0 30px; /* Add space inside the element (top-bottom, left-right) */
+  background-color: #f5f5f5; /* Set the background color */
+  color: #7743cc; /* Set the text color */
+}
+
+.logo {
+  font-size: 24px; /* Set the text size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.nav-links {
+  display: flex; /* Arrange child elements in a row */
+  gap: 30px; /* Add space between child elements */
+}
+
+.auth {
+  display: flex; /* Arrange child elements in a row */
+  gap: 20px; /* Add space between child elements */
+}
