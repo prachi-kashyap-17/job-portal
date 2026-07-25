@@ -20,6 +20,7 @@ require("dotenv").config();
 const DB_PATH =process.env.MONGO_URI;
 const app = express();
 
+app.set('trust proxy',1);
 
 const store = new MongoDBStore({
   uri: DB_PATH,
