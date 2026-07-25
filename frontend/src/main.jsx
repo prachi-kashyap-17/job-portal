@@ -12,7 +12,7 @@ import { Provider } from "react-redux";
 import store from "../store/index";
 
 //components
-import Home from "./components/home.jsx";
+import Home from "./components/Home.jsx";
 import Job from "./components/Job.jsx";
 import Myapplication from "./components/Myapplication.jsx";
 import Register from "./components/Register.jsx";
