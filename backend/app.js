@@ -49,7 +49,7 @@ app.use("/uploads", express.static("uploads"));
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://job-portal-prachi-3049.vercel.app",
     credentials: true,
   })
 );
