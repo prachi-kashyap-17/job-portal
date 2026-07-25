@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:1703";
+const BASE_URL = "https://job-portal-backend-bge0.onrender.com";
 
 export const registerUser = async(formdata)=>{
   const response = await fetch(`${BASE_URL}/register`,{
