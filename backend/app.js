@@ -74,13 +74,14 @@ app.use(applicationRouter)
 //   res.send("Hello World!");
 // });
 
+const PORT = process.env.PORT||1703;
 
 mongoose
   .connect(DB_PATH)
   .then(() => {
     console.log("mongodb connected");
-    app.listen(1703, () => {
-      console.log(`server running at http://localhost:1703`);
+    app.listen(PORT, () => {
+      console.log(`server running at http://localhost:${PORT}`);
     });
   })
   .catch((err) => {
