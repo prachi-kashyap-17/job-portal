@@ -53,7 +53,7 @@ A full-stack job portal web application built with the MERN stack (MongoDB, Expr
 
 ## Project Structure
 
-\`\`\`
+```
 job-portal/
 ├── backend/
 │ ├── controllers/ # Route handler logic
@@ -68,7 +68,7 @@ job-portal/
 │ │ ├── App.jsx
 │ │ └── main.jsx # Routes and app entry
 │ └── store/ # Redux store and slices
-\`\`\`
+```
 
 ## Getting Started (Local Setup)
 
