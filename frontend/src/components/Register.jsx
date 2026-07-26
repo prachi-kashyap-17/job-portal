@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { registerUser } from "../api/auth";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [formdata, setformdata] = useState({
     firstName: "",
     lastName: "",
@@ -29,7 +31,10 @@ const Register = () => {
     try {
       const data = await registerUser(formdata);
       console.log("success:", data);
-      alert("Register succesfully");
+      alert(
+        "Register succesfully! please login with same email and password press ok to continue",
+      );
+      navigate("/login");
       seterrors([]);
       setformdata({
         firstName: "",
