@@ -46,7 +46,7 @@ function SavedJob() {
               <div>
                 <button
                   className="btn btn-outline-primary btn-sm me-2"
-                  onClick={() => navigate(`/jobs/${job._id}`)}
+                  onClick={() => navigate(`/jobs/${job.applyOn._id}`)}
                 >
                   View Job
                 </button>
