@@ -1,7 +1,9 @@
 import { createJob } from "../api/job";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Postjob() {
+  const navigate = useNavigate();
   const [jobdetail, setjobdetail] = useState({
     title: "",
     companyName: "",
@@ -26,6 +28,7 @@ function Postjob() {
     try {
       const data = await createJob(jobdetail);
       alert("job post sucessfully");
+      navigate("/recruiter/myjobs");
       setjobdetail({
         title: "",
         companyName: "",
