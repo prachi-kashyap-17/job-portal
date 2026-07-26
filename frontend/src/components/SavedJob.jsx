@@ -31,35 +31,33 @@ function SavedJob() {
     <div className="container mt-4">
       <h2 className="mb-4">Saved Jobs</h2>
 
-      {savedjobs
-        .filter((job) => job.applyOn)
-        .map((job) => (
-          <div className="card mb-3 p-3" key={job._id}>
-            <div className="d-flex justify-content-between align-items-center">
-              <div>
-                <h5>{job.applyOn.title}</h5>
-                <p className="text-muted mb-1">
-                  {job.applyOn.companyName} · {job.applyOn.location}
-                </p>
-                <small className="text-muted">{job.applyOn.salary}</small>
-              </div>
-              <div>
-                <button
-                  className="btn btn-outline-primary btn-sm me-2"
-                  onClick={() => navigate(`/jobs/${job.applyOn._id}`)}
-                >
-                  View Job
-                </button>
-                <button
-                  className="btn btn-outline-danger btn-sm"
-                  onClick={() => handleUnsave(job._id)}
-                >
-                  Unsave
-                </button>
-              </div>
+      {savedjobs.map((job) => (
+        <div className="card mb-3 p-3" key={job._id}>
+          <div className="d-flex justify-content-between align-items-center">
+            <div>
+              <h5>{job.applyOn.title}</h5>
+              <p className="text-muted mb-1">
+                {job.applyOn.companyName} · {job.applyOn.location}
+              </p>
+              <small className="text-muted">{job.applyOn.salary}</small>
+            </div>
+            <div>
+              <button
+                className="btn btn-outline-primary btn-sm me-2"
+                onClick={() => navigate(`/jobs/${job.applyOn._id}`)}
+              >
+                View Job
+              </button>
+              <button
+                className="btn btn-outline-danger btn-sm"
+                onClick={() => handleUnsave(job._id)}
+              >
+                Unsave
+              </button>
             </div>
           </div>
-        ))}
+        </div>
+      ))}
     </div>
   );
 }
