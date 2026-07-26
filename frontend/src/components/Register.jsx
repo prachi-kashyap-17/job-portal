@@ -32,7 +32,7 @@ const Register = () => {
       const data = await registerUser(formdata);
       console.log("success:", data);
       alert(
-        "Register succesfully! please login with same email and password press ok to continue",
+        "Register succesfully! please login with same email and password, press ok to continue",
       );
       navigate("/login");
       seterrors([]);
