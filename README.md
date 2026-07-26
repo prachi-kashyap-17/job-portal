@@ -138,7 +138,6 @@ Building and deploying this project involved solving several real-world challeng
 
 ## Future Improvements
 
-- Add authorization checks so recruiters can only edit/delete their own job postings
 - Add pagination for job listings
 - Add email notifications for application status updates
 - Add unit and integration tests
